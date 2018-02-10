@@ -1,0 +1,25 @@
+{
+   "name": "Alakajam! 1"
+  ,"phases": {
+     "themeVoting": null
+    ,"themeShortlist": null
+    ,"compoStart": null
+    ,"compoEnd": null
+    ,"entryVoting": "2017-09-24 21:00:00"
+    ,"results": null
+  }
+  ,"categories": [
+     "Overall"
+    ,"Graphics"
+    ,"Audio"
+    ,"Gameplay"
+    ,"Originality"
+    ,"Theme"
+  ]
+  ,"files": {
+     "themeVotes": null
+    ,"themeShortlistVotes": null
+    ,"entries": "data/akj1/entries.csv"
+    ,"entryVotes": "data/akj1/entryVotes.csv"
+  }
+}

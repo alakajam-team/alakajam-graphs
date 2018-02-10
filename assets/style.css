@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #ccc;
+  color: #005a70;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  line-height: normal; }
+
+.hold, canvas {
+  background-color: #eee;
+  height: 300px;
+  margin: 60px 0 10px 10px;
+  position: relative;
+  width: 500px; }
+
+canvas {
+  height: 350px;
+  margin-top: 10px; }
+
+.g-bar, .g-scatter, .g-matrix {
+  height: 300px;
+  width: 500px; }
+  .g-bar .axis-x, .g-scatter .axis-x, .g-matrix .axis-x {
+    border-top: 2px solid #005a70;
+    position: absolute;
+    width: 480px;
+    left: 10px;
+    text-align: right;
+    top: 0; }
+    .g-bar .axis-x.narrower, .g-scatter .axis-x.narrower, .g-matrix .axis-x.narrower {
+      left: 60px;
+      width: 430px; }
+    .g-bar .axis-x span, .g-scatter .axis-x span, .g-matrix .axis-x span {
+      bottom: 2px;
+      position: absolute;
+      right: 0; }
+    .g-bar .axis-x.other, .g-scatter .axis-x.other, .g-matrix .axis-x.other {
+      border-top: 2px solid rgba(0, 90, 112, 0.2); }
+  .g-bar.axis-x-bottom .axis-x span, .g-scatter.axis-x-bottom .axis-x span, .g-matrix.axis-x-bottom .axis-x span {
+    bottom: auto;
+    top: 0; }
+  .g-bar .tick-x, .g-scatter .tick-x, .g-matrix .tick-x {
+    border-top: 2px solid #005a70;
+    font-size: 10px;
+    left: 10px;
+    position: absolute;
+    text-align: left;
+    top: 272px;
+    width: 2px; }
+  .g-bar .axis-y, .g-scatter .axis-y, .g-matrix .axis-y {
+    border-left: 2px solid #005a70;
+    position: absolute;
+    height: 260px;
+    left: 10px;
+    line-height: 0;
+    padding: 0 0 0 5px;
+    top: 10px; }
+    .g-bar .axis-y.other, .g-scatter .axis-y.other, .g-matrix .axis-y.other {
+      border-left: 2px solid rgba(0, 90, 112, 0.2); }
+  .g-bar .tick-y, .g-scatter .tick-y, .g-matrix .tick-y {
+    border-right: 2px solid #005a70;
+    height: 2px;
+    font-size: 10px;
+    left: 0;
+    padding-right: 4px;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    width: 54px; }
+  .g-bar table, .g-scatter table, .g-matrix table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    height: 250px;
+    width: 450px;
+    margin: 0 0 0 14px;
+    position: relative;
+    table-layout: fixed;
+    top: 20px; }
+    .g-bar table.wider, .g-scatter table.wider, .g-matrix table.wider {
+      width: 470px; }
+    .g-bar table.narrower, .g-scatter table.narrower, .g-matrix table.narrower {
+      width: 430px;
+      margin-left: 64px; }
+    .g-bar table td, .g-scatter table td, .g-matrix table td {
+      height: 240px;
+      padding: 5px;
+      position: relative;
+      vertical-align: bottom; }
+
+.g-bar table td div {
+  background-color: #f7516d;
+  border-radius: 3px;
+  box-shadow: 0px 3px 0px 0px #005a70;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  width: 100%; }
+  .g-bar table td div span {
+    bottom: -5px;
+    display: block;
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    height: 100%;
+    margin-left: -30px;
+    min-height: 30px;
+    position: absolute;
+    text-shadow: 0 3px #005a70;
+    text-align: center;
+    left: 50%;
+    width: 60px; }
+.g-bar.small-nums table td div span {
+  font-size: 10px;
+  min-height: 15px;
+  text-shadow: 0 2px #005a70; }
+
+.g-scatter .space {
+  height: 250px;
+  width: 434px;
+  margin: 0 0 0 28px;
+  position: relative;
+  top: 20px; }
+  .g-scatter .space .point {
+    background-color: #f7516d;
+    border-radius: 50%;
+    box-shadow: 0px 1px 0px 0px #005a70;
+    display: block;
+    height: 4px;
+    width: 4px;
+    position: absolute; }
+
+.g-matrix table td {
+  height: 31px; }
+  .g-matrix table td div {
+    background-color: #f7516d;
+    border-radius: 3px;
+    box-shadow: 0px 3px 0px 0px #005a70;
+    color: #fff;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    width: 100%; }
+    .g-matrix table td div span {
+      display: block;
+      font-family: 'Fredoka One', cursive;
+      font-size: 20px;
+      height: 1px;
+      margin-left: -30px;
+      position: absolute;
+      text-shadow: 0 3px #005a70;
+      text-align: center;
+      top: 5px;
+      left: 50%;
+      width: 60px; }
+
+header {
+  background-color: #00abd6;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: -50px;
+  width: 500px;
+  z-index: 2; }
+  header h1 {
+    background-image: url("brand.png");
+    color: transparent;
+    display: block;
+    float: left;
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    height: 50px;
+    width: 44px; }
+  header h2 {
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 28px;
+    font-family: 'Fredoka One', cursive;
+    height: 50px;
+    letter-spacing: 2px;
+    margin: 9px 0 0 5px;
+    text-shadow: 0 3px #005a70;
+    width: auto; }

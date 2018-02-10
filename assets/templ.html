@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head>
+	<title>akj graphs</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="assets/style.css">
+	<!--<script type="text/javascript" src="autorender.js"></script>-->
+</head><body>
+	<!--<canvas id="out"></canvas>-->
+::foreach graphs::
+	<div class="hold">
+		<header>
+			<h1>Alakajam!</h1>
+			<h2>::name::</h2>
+		</header>
+		<div class="g-::type::">
+			::data::
+		</div>
+	</div>
+::end::
+</body></html>
