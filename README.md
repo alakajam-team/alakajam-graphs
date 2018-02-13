@@ -1,6 +1,6 @@
 # Alakajam! graphs #
 
-This is a toolset for creating graphs showing various data and statistics about AKJ events. [Haxe](http://www.haxe.org/) (and neko) is required for compilation. [Sass](http://sass-lang.com/) is used for stylesheet creation.
+This is a toolset for creating graphs showing various data and statistics about AKJ events. [Haxe 4](http://www.haxe.org/) (and neko) is required for compilation. [Sass](http://sass-lang.com/) is used for stylesheet creation.
 
 ## Building ##
 
